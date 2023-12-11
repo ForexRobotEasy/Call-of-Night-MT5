@@ -1,0 +1,64 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                              Call of Night MT5   |
+//|                                              forexroboteasy.com  |
+//|                                              Forex Robot Easy Team|
+//+------------------------------------------------------------------+
+
+//+------------------------------------------------------------------+
+//|                  Set up and installation function                 |
+//+------------------------------------------------------------------+
+
+void SetupAndInstall()
+{
+    // Code for setting up and installing the software
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//|                          Trade function                           |
+//+------------------------------------------------------------------+
+
+void Trade()
+{
+    // Code for trading all supported pairs from a single chart
+    // ...
+    
+    // Implement pending orders to reduce slippage
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//|                       Transaction function                        |
+//+------------------------------------------------------------------+
+
+void CloseTransactions()
+{
+    // Code for closing all transactions within the specified time frame
+    // ...
+    
+    // Implement stop loss, take profit, and limit on the life of each trade
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//|                          Main Program                             |
+//+------------------------------------------------------------------+
+
+int OnInit()
+{
+    SetupAndInstall();
+    return(INIT_SUCCEEDED);
+}
+
+void OnTick()
+{
+    Trade();
+    CloseTransactions();
+}
+
+void OnDeinit(const int reason)
+{
+    // Clean up and release any resources used by the program
+    // ...
+}
